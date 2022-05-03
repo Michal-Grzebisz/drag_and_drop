@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <script src="https://unpkg.com/exif-js@2.2.1"></script>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<main id="app" class="container">
+  <section class="droparea">
+    <i class="fa fa-upload"></i>
+    <div class="input_container">
+      <label for="files">
+        <strong>Choose a file</strong>
+        <span class="box__dragndrop"> or drag it here</span>.
+      </label>
+      <input class="files" id="files" type="file" accept="image/jpg, image/jpeg", multiple>
+      <p><small>Only .jpg or .jpeg files. Max file size - 1mb.</small></p>
+    </div>
+  </section>
+  <section class="list_container">
+    <ul class="files_list"></ul>
+  </section>
+</main>
+<script src="index.js"></script>
+</body>
+</html>
